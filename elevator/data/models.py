@@ -3,8 +3,6 @@ from django.urls import reverse
 
 
 class Wheat(models.Model):
-
-    id = models.AutoField(primary_key=True)
     weight = models.FloatField()
     date = models.DateField(auto_now=True)
 

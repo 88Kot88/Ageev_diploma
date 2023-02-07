@@ -4,12 +4,8 @@
 {% block content %}
 <div class="body">
     <div class="bloc">
-        {% if query_set == "gen_director" %}
-            <h1>Пришло зерна<br> за месяц:</h1>
-            <p class="p">{{month}} Тонн зерна</p>
-        {% else %}
-            <h1>У вас нет прав на<br>просмотр этой информации</h1>
-        {% endif %}
+        <h1>Пришло зерна<br> за месяц:</h1>
+        <p class="p">{{month}} Тонн зерна</p>
     </div>
 </div>
 
