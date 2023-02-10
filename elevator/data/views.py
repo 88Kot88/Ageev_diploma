@@ -73,7 +73,7 @@ def week_open(request):
 @login_required
 def month_open(request):
     day = datetime.now()
-    month = Wheat.objects.filter(date__year=day.year).aggregate(Sum('weight'))
+    month = Wheat.objects.filter(date__month=day.month).aggregate(Sum('weight'))
     for key, value in month.items():
         if value == None:
             month = 0
